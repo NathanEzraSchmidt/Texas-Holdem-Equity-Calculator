@@ -625,9 +625,11 @@ void two_off(int n, int ranks_short_len, int* bool_straight, int* ranks, int* ra
        c = -1;
 
     new_off:
-        for (int j=0;j<n;++j)counts[j]=0;
+        for (int j=0; j < n; ++j)
+		counts[j]=0;
         ++c;
-        if (c == 10) goto new_suit;
+        if (c == 10) 
+		goto new_suit;
 
         which_small = five_three_small + c*2;
 
@@ -689,7 +691,8 @@ void none_off(int n, int ranks_short_len, int* bool_straight, int* ranks, int* r
     int total;
 
     new_suit:
-        ++i; if (i == 4)
+        ++i; 
+	if (i == 4)
             return;
         suit = suits + i*13;
 
