@@ -115,7 +115,8 @@ int rank_winners(int n, int* r_len, int* best_p, int* ranks, int* p_ranks, int* 
     // quads = 0; straight = 1; trips = 2; two pair = 3; one pair = 4;
 
     if (best_hand == 1){
-        int len = 0, card1, card2;
+        int len = 0;
+	int card1, card2;
         int fh[2];
 
         for (int i = 0; i < n; ++i){
@@ -178,7 +179,8 @@ int rank_winners(int n, int* r_len, int* best_p, int* ranks, int* p_ranks, int* 
             if (!bool_straight[i])
                 continue;
             if (straight[i] < best){
-                best_p[0] = i; len = 1;
+                best_p[0] = i; 
+		len = 1;
                 best = straight[i];
             }
             else if (straight[i] == best){
