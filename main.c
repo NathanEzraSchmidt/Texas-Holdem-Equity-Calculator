@@ -420,6 +420,6 @@ void print_instructions()
     printf("Use \"t\" for \"10\" (e.g. khtc, and not kh10c). ");
     printf("Input hands for up to 16 players. When done, input nothing and just press enter when prompted for the next player's hand.\n");
     printf("\nAbout output:\n");
-    printf("For each player the both number of both combinations and percentages of a win, 2-way tie, 3-way tie, etc. is given.\n");
+    printf("First the combinations and second and percentages of a win, 2-way tie, 3-way tie, etc. is given for each player.\n");
     puts("\n***********************\n");
 }
