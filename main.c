@@ -1,3 +1,8 @@
+/*
+** Author: Nathan Ezra Schmidt
+** email: nathanezraschmidt@gmail.com
+*/
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
